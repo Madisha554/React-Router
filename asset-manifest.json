@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-Router/static/css/main.201a4fa2.css",
-    "main.js": "/React-Router/static/js/main.9e17213a.js",
+    "main.js": "/React-Router/static/js/main.cfaa1771.js",
     "static/js/68.05e2ccbb.chunk.js": "/React-Router/static/js/68.05e2ccbb.chunk.js",
     "static/js/17.d4fba875.chunk.js": "/React-Router/static/js/17.d4fba875.chunk.js",
     "static/js/982.af3b3793.chunk.js": "/React-Router/static/js/982.af3b3793.chunk.js",
@@ -12,7 +12,7 @@
     "static/js/760.395a039c.chunk.js": "/React-Router/static/js/760.395a039c.chunk.js",
     "index.html": "/React-Router/index.html",
     "main.201a4fa2.css.map": "/React-Router/static/css/main.201a4fa2.css.map",
-    "main.9e17213a.js.map": "/React-Router/static/js/main.9e17213a.js.map",
+    "main.cfaa1771.js.map": "/React-Router/static/js/main.cfaa1771.js.map",
     "68.05e2ccbb.chunk.js.map": "/React-Router/static/js/68.05e2ccbb.chunk.js.map",
     "17.d4fba875.chunk.js.map": "/React-Router/static/js/17.d4fba875.chunk.js.map",
     "982.af3b3793.chunk.js.map": "/React-Router/static/js/982.af3b3793.chunk.js.map",
@@ -24,6 +24,6 @@
   },
   "entrypoints": [
     "static/css/main.201a4fa2.css",
-    "static/js/main.9e17213a.js"
+    "static/js/main.cfaa1771.js"
   ]
 }
