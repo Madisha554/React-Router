@@ -1,19 +1,22 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./styles.css";
 
 const SearchUser = () => {
+  const navigate = useNavigate();
   const [username, setUsername] = useState(null);
   const [errorMsg, setErrorMsg] = useState(null);
   const [loading, setLoading] = useState("Submit");
   const [attempts, setAttempts] = useState(3);
 
-  const handleGetUser = async (e) => {
+  const handleGetUser = async () => {
     const response = await axios.get(
       `https://api.github.com/users/${username}`
     );
     if (response.status === 200) {
       // REDIRECT
+      navigate(`/users/user/${username}`)
     }
     return response;
   };
@@ -32,8 +35,11 @@ const SearchUser = () => {
   useEffect(() => {
     if (attempts <= 0) {
       setErrorMsg("Too many attempts, REDIRECTING...");
+      setTimeout(() => {
+        navigate('/')
+      }, 3000);
     }
-  }, [attempts]);
+  }, [attempts, navigate]);
   return (
     <>
       <h3>Search User</h3>
@@ -46,7 +52,7 @@ const SearchUser = () => {
         )}
         <input
           type="text"
-          placeholder="Github Surname"
+          placeholder="Github Username"
           className="login-inp"
           onChange={(e) => {
             setUsername(e.target.value);

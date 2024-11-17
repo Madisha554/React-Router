@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+ 
 const Login = ({ setIsLogged, setUsername }) => {
   const [loginUsername, setLoginUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -10,7 +10,7 @@ const Login = ({ setIsLogged, setUsername }) => {
   const navigate = useNavigate();
 
   const dummyUserObject = {
-    username: "Kolosafo",
+    username: "madisha554",
     password: "12345",
   };
   const handleLogin = (e) => {
@@ -28,7 +28,7 @@ const Login = ({ setIsLogged, setUsername }) => {
   };
   return (
     <form className="login-form" onSubmit={handleLogin}>
-      <span className="error-span">{errorMsg}</span>
+      <span className="text-red-700 text-xl  error-span">{errorMsg}</span>
       <label htmlFor="username" className="login-label">
         Username
       </label>
