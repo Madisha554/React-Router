@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/68.05e2ccbb.chunk.js","mappings":"uIAAA,MACA,EADgBA,KAAMC,EAAAA,EAAAA,KAAA,MAAAC,SAAI,iB","sources":["components/about.js"],"sourcesContent":["const AboutUs = () => <h1>About Us Page</h1>;\r\nexport default AboutUs;"],"names":["AboutUs","_jsx","children"],"sourceRoot":""}
